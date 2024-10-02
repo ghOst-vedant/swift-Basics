@@ -16,7 +16,7 @@ if namesOfIntegers.isEmpty{
     print("Dict is empty.")
 }
 
-print(namesOfIntegers[2]) //this wraps the o/p i.e the value with Optional(value)
+print(namesOfIntegers.keys.sorted()) //this wraps the o/p i.e the value with Optional(value)
 
 //to avoid that
 if let name = namesOfIntegers[2] {
@@ -30,4 +30,16 @@ print("\nIterating over Dictionary.")
 for (key,names) in namesOfIntegers{
     print("At key: \(key) value: \(names).")
 }
+
+//Iterate over values or the keys
+print("\nIterate over the keys:")
+for keys in namesOfIntegers.keys.sorted(){
+    print("\(keys)")
+}
+
+print("\nIterate over the values:")
+for values in namesOfIntegers.values{
+    print("\(values)")
+}
+
 
